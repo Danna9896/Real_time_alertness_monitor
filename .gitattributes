@@ -1,0 +1,2 @@
+*.pth !text !filter !merge !diff
+weights/ViT.pth filter=lfs diff=lfs merge=lfs -text
