@@ -90,7 +90,7 @@ python preprocessing/preprocessing_sequential.py
 | **Epochs** | 30 | 30 | 30 | 20 | 30 | 30 |
 | **Input Size** | 224×224 | 224×224 | 224×224 | 224×224 | 224×224 | 224×224 |
 | **Scheduler** | ReduceLROnPlateau | ReduceLROnPlateau | StepLR | CosineAnnealing | ReduceLROnPlateau | ReduceLROnPlateau |
-| **Early Stopping** | 5 epochs | 5 epochs | 5 epochs | - | 5 epochs | 5 epochs |
+| **Early Stopping** | 8 epochs | 8 epochs | 8 epochs | - | 8 epochs | 8 epochs |
 | **Special Features** | Standard CNN | SE blocks (r=16) | GRU (h=256, l=1) | Pretrained ViT-B/16 | Horizontal flip avg | No augmentations |
 
 ## Temporal Model (ResNet18+GRU)
