@@ -93,23 +93,30 @@ python preprocessing/preprocessing_sequential.py
 - **yolov8n-face.pt** – YOLOv8 face detector
 
 # Usage
+
 ### 1. Clone the repository
+```bash
 git clone https://github.com/<your-username>/Real-time_alertness_monitor.git
 cd Real-time_alertness_monitor
+```
 
 ### 2. Install dependencies
+```bash
 pip install -r requirements.txt
-
+```
 ### 3. (Optional) Preprocess datasets — only if you want to train models
 ####    DAiSEE frames (ResNet / SE / ViT / Flip-Invariant)
+```bash
 python preprocessing/preprocessing_daisee.py
-
+```
 ####    Sequential 10-frame dataset (GRU)
+```bash
 python preprocessing/preprocessing_sequential.py
-
+```
 ### 4. Run the real-time webcam application
+```bash
 python app.py
-
+```
 # References
 
 [1] Nezami, O. M., et al. *Deep Learning for Student Engagement Recognition: A Comparative Study.* ICCVW, 2019.  
