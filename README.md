@@ -86,8 +86,7 @@ python preprocessing/preprocessing_sequential.py
 - **models/** – model architectures (ResNet, SE, GRU, ViT, flip-invariant)
 - **utils/** – heatmaps, confusion matrices, robustness tests
 - **weights/** – trained `.pth` files
-- **daisee_dataset/** – frame-based dataset
-- **daisee_sequential/** – sequential dataset for GRU
+- **student_data/** – frame-based 2k dataset
 - **sounds/** – alert audio files
 - **app.py** – real-time webcam application
 - **config.py** – centralized configuration
