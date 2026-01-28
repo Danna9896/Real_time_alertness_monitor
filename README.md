@@ -40,6 +40,31 @@
 
 # Parameters
 
+## Preprocessing
+- Frame extraction rate  
+- Target image size (224×224)  
+- Closed-eye filtering threshold  
+- Sequence length for temporal models (10 frames)
+
+## Training
+- Optimizer settings (AdamW)  
+- Learning rate schedule  
+- Batch size (images or sequences)  
+- Early stopping patience  
+- Number of epochs  
+
+## Temporal Model (ResNet18+GRU)
+- Sequence length (10 frames)  
+- GRU hidden size  
+- Frame-level embeddings from ResNet18  
+
+## Real-Time Application
+- Prediction interval (5 predictions/second)  
+- Smoothing window (recent predictions)  
+- Engagement bar update interval  
+- Confetti / alert thresholds  
+- Visual feedback color ranges  
+
 ---
 
 # Folders
