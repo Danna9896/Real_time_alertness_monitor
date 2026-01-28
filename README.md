@@ -43,6 +43,10 @@
 Preprocess DAiSEE dataset (auto-downloads from Kaggle):
 ```bash
 python preprocessing/preprocessing_daisee.py
+
+```Preprocess the Student Concentration dataset:
+```bash
+python preprocessing/preprocessing_sc.py
 ```
 
 Create sequential dataset for GRU:
