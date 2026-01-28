@@ -18,17 +18,6 @@
 <a href="https://github.com/user-attachments/files/24904678/Realtime_alertness_monitor_project_report.1.pdf">Project pdf</a><br>
 <a href="https://www.youtube.com/watch?v=ye48xJwuano">Project Presentation</a>
 
-
-# Real-time Alertness Monitor
-
-Python implementation of a real-time webcam system that detects **student engagement** using deep learning  
-(ResNet18, SE-ResNet18, ViT, and ResNet18+GRU), combined with a clean **blue-themed UI**.
-
-<p align="center">
-  <img src="assets/preview_app_1.png" width="45%">
-  <img src="assets/preview_app_2.png" width="45%">
-</p>
-
 ---
 
 ## Based on methods from:
