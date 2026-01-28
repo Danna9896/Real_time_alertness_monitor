@@ -18,6 +18,24 @@
 <a href="https://github.com/user-attachments/files/24904678/Realtime_alertness_monitor_project_report.1.pdf">Project pdf</a><br>
 <a href="https://www.youtube.com/watch?v=ye48xJwuano">Project presentation video</a>
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/8e1c8eef-ef3c-4973-b08d-f7eae6bd380e" width="250px" />
+      <br><b>Caption 1</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/d304f77a-1b09-4f02-ae0a-cb4a6144054d" width="250px" />
+      <br><b>Caption 2</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/e3a46d36-45b8-4a97-9ce3-aa7e5c7cbb9b" width="250px" />
+      <br><b>Caption 3</b>
+    </td>
+  </tr>
+</table>
+
+
 # Models Implemented
 
 1. **ResNet18 (Baseline)**  
