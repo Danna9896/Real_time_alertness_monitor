@@ -89,7 +89,6 @@ python preprocessing/preprocessing_sequential.py
 - **student_dataset/** – frame-based 2k dataset
 - **sounds/** – alert audio files
 - **app.py** – real-time webcam application
-- **config.py** – centralized configuration
 - **requirements.txt** – Python dependencies
 - **yolov8n-face.pt** – YOLOv8 face detector
 
