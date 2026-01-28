@@ -38,7 +38,7 @@
 6. **ResNet18 (No Augmentations)**  
    Baseline model trained without data augmentation.
 
-### Data Preprocessing
+# Data Preprocessing
 
 Preprocess DAiSEE dataset (auto-downloads from Kaggle):
 ```bash
