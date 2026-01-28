@@ -96,7 +96,7 @@ python preprocessing/preprocessing_sequential.py
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/Real-time_alertness_monitor.git
+git clone https://github.com/Danna9896/Real-time_alertness_monitor.git
 cd Real-time_alertness_monitor
 ```
 
