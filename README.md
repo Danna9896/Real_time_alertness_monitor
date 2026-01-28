@@ -91,7 +91,6 @@ python preprocessing/preprocessing_sequential.py
 | **Input Size** | 224×224 | 224×224 | 224×224 | 224×224 | 224×224 | 224×224 |
 | **Scheduler** | StepLR (step=8, γ=0.5) | StepLR (step=8, γ=0.5) | StepLR (step=8, γ=0.5) | CosineAnnealing | StepLR (step=8, γ=0.5) | StepLR (step=8, γ=0.5) |
 | **Early Stopping** | 8 epochs | 8 epochs | 8 epochs | No | 8 epochs | 8 epochs |
-| **Special Features** | Standard CNN | SE blocks (r=16) | GRU (h=256, l=1) | Pretrained ViT-B/16 | Horizontal flip avg | Same as ResNet18 but no augmentations |
 
 ## Temporal Model (ResNet18+GRU)
 - Sequence length: **10 frames**
@@ -202,7 +201,7 @@ SELECTED_MODEL = 1  # Tests Flip-Invariant ResNet18
 ```
 
 This test helps verify if models are robust to horizontal flips. The Flip-Invariant model (index 1) should show the highest consistency.
-##### other files in utils are model specific , so you can run without changing nothing.
+##### other files in utils are model specific , so you can run without changing them.
 ### 6. Run the real-time webcam application
 ```bash
 python app.py
@@ -219,6 +218,7 @@ python app.py
 [7] Chung, J., Gulcehre, C., Cho, K., Bengio, Y. *Empirical Evaluation of Gated Recurrent Units on Sequence Modeling.* 2014.  
 
 ---
+
 
 
 
