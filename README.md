@@ -49,7 +49,7 @@ bash
 python preprocessing/preprocessing_sc.py
 
 Create sequential dataset for GRU:
-```bash
+bash
 python preprocessing/preprocessing_sequential.py
 ```
 # Parameters
