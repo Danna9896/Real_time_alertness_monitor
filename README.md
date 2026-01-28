@@ -41,20 +41,18 @@
 
 # Folders
 
-- **models/** – model architectures (ResNet18, SE, GRU, ViT, flip-invariant)  
-- **preprocessing/** – dataset construction & filtering scripts  
-- **sounds/** – alert audio files  
-- **student dataset/** – student engagement images (manually downloaded dataset)  
+- **preprocessing/** – dataset construction & filtering  
+- **models/** – model architectures (ResNet, SE, GRU, ViT, flip-invariant)  
 - **utils/** – heatmaps, confusion matrices, robustness tests  
-- **weights/** – trained `.pth` model weights  
-
+- **weights/** – trained `.pth` files  
+- **daisee_dataset/** – frame-based dataset  
+- **daisee_sequential/** – sequential dataset for GRU  
+- **sounds/** – alert audio files
+  
 - **app.py** – real-time webcam application  
-- **requirements.txt** – Python dependencies  
-- **yolov8n-face.pt** – YOLOv8 face detector weights  
-- **README.md** – project documentation
-- 
----
-
+- **config.py** – centralized configuration  
+- **requirements.txt** – Python dependencies
+  
 # Reference
 
 [1] Nezami, O. M., et al. *Deep Learning for Student Engagement Recognition.* ICCVW 2019.  
