@@ -46,37 +46,13 @@ daisee_dataset/
 
 2️⃣ Student Concentration Dataset (Kaggle)
 
-Each user must download the dataset manually from Kaggle:
-
-🔗 https://www.kaggle.com/datasets/programmer3/student-concentration-image-dataset
-
-How to install it:
-
-Download the ZIP file from Kaggle
-
-Extract it into your project root folder, so it looks like:
-
-Real-time_alertness_monitor/
-│
-├── student-concentration-image-dataset/
-│   ├── Active/
-│   ├── Drowsy/
-│   └── Sleepy/
-
-
-The scripts automatically detect the folder based on its name, so each user can extract it to their own path.
-
-No hard-coded directories.
-
 ▶️ Running the Real-Time App
 
 Run:
 
 ## 🎥 
 
-<p align="center">
-  <img src="images/demo.gif" width="600">
-</p>
+![gif_demonstration](https://github.com/user-attachments/assets/2d1948d7-1f71-4bcc-93d6-40dab6d78d2d)
 
 python realtime_app/main.py
 
