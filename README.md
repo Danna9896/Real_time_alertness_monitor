@@ -1,5 +1,6 @@
 00460217 – Real-Time Alertness Monitor
-<div align="center"> <!-- Replace this with your own image path --> <img src="images/readme_banner.png" width="600"> <h3>Technion ECE 046211 – Deep Learning</h3> <h4>Real-Time Webcam-Based Student Engagement Detection</h4> </div>
+<div align="center"><img width="1572" height="883" alt="image" src="https://github.com/user-attachments/assets/a4809a26-f2cf-41d5-bf6c-b8db32bd2bd2" /></div>
+
 📌 Project Overview
 
 This project detects student engagement in real time using a webcam feed.
