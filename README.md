@@ -107,7 +107,7 @@ python preprocessing/preprocessing_daisee.py
 ####    Sequential 10-frame dataset (GRU)
 python preprocessing/preprocessing_sequential.py
 
-##### 4. Run the real-time webcam application
+### 4. Run the real-time webcam application
 python app.py
 
 # References
