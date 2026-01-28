@@ -202,7 +202,7 @@ SELECTED_MODEL = 1  # Tests Flip-Invariant ResNet18
 ```
 
 This test helps verify if models are robust to horizontal flips. The Flip-Invariant model (index 1) should show the highest consistency.
-
+##### other files in utils are model specific , so you can run without changing nothing.
 ### 6. Run the real-time webcam application
 ```bash
 python app.py
@@ -219,5 +219,6 @@ python app.py
 [7] Chung, J., Gulcehre, C., Cho, K., Bengio, Y. *Empirical Evaluation of Gated Recurrent Units on Sequence Modeling.* 2014.  
 
 ---
+
 
 
