@@ -18,6 +18,23 @@
 <a href="https://github.com/user-attachments/files/24904678/Realtime_alertness_monitor_project_report.1.pdf">Project pdf</a><br>
 <a href="https://www.youtube.com/watch?v=ye48xJwuano">Project presentation video</a>
 
+# Models Implemented
+
+1. **ResNet18 (Baseline)**  
+   Standard ImageNet-pretrained ResNet18 used for frame-level engagement classification.
+
+2. **ResNet18 + Squeeze-and-Excitation (SE)**  
+   Adds a channel-attention mechanism that reweights feature channels, improving focus on relevant facial cues (eyes, gaze, expression).
+
+3. **ResNet18 + GRU (Temporal)**  
+   Combines ResNet embeddings with a bidirectional GRU operating on 10-frame sequences, capturing temporal patterns such as blinking, gaze shifts, and micro-expressions.
+
+4. **Vision Transformer (ViT)**  
+   Patch-based self-attention architecture that models long-range relationships between facial regions.
+
+5. **Flip-Invariant ResNet18**  
+   Processes both the original and horizontally flipped image and averages logits, making predictions consistent under mirror transformations.
+
 # Parameters
 
 ## Preprocessing
