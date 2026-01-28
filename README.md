@@ -132,7 +132,20 @@ python preprocessing/preprocessing_daisee.py
 ```bash
 python preprocessing/preprocessing_sequential.py
 ```
-### 4. Run the real-time webcam application
+
+### 4. (Optional) Train your own models  
+You can train any of the architectures directly from the `models/` folder.  
+Each script loads the dataset, trains the model, and saves the `.pth` file into `weights/`.
+
+Examples:
+```bash
+python models/resnet18.py
+python models/resnet18_se.py
+python models/resnet18_gru.py
+python models/ViT.py
+python models/flip_invariant_resnet18.py
+
+### 5. Run the real-time webcam application
 ```bash
 python app.py
 ```
