@@ -41,13 +41,16 @@
 
 # Folders
 
-- **models/** – trained weights (.pth)  
-- **preprocessing/** – scripts for dataset creation and filtering  
-- **sequences/** – scripts for GRU sequence generation  
-- **assets/** – images used in README/UI  
-- **app.py** – main real-time webcam application  
-- **train_resnet.py** – ResNet training script  
-- **train_gru.py** – GRU sequence model training  
+- **preprocessing/** – dataset construction & filtering  
+- **models/** – model architectures (ResNet, SE, GRU, ViT, flip-invariant)  
+- **utils/** – heatmaps, confusion matrices, robustness tests  
+- **weights/** – trained `.pth` files  
+- **daisee_dataset/** – frame-based dataset  
+- **daisee_sequential/** – sequential dataset for GRU  
+- **sounds/** – alert audio files  
+- **app.py** – real-time webcam application  
+- **config.py** – centralized configuration  
+- **requirements.txt** – Python dependencies  
 
 ---
 
