@@ -52,7 +52,7 @@ Run:
 
 ## 🎥 
 
-![gif_demonstration](https://github.com/user-attachments/assets/2d1948d7-1f71-4bcc-93d6-40dab6d78d2d)
+![gif_demonstration](https://github.com/user-attachments/assets/7a007650-143c-4720-82da-c30c27c021b5)
 
 python realtime_app/main.py
 
