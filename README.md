@@ -15,8 +15,5 @@
   A real-time deep learning application for detecting and visualizing student engagement using webcam input.
 </p>
 
-
-  <a href="[Realtime_alertness_monitor_project_report (1).pdf](https://github.com/user-attachments/files/24904678/Realtime_alertness_monitor_project_report.1.pdf)
-">Project pdf</a> • 
-  <a href="[(https://www.youtube.com/watch?v=ye48xJwuano)]()">Video demonstration</a>
-
+<a href="https://github.com/user-attachments/files/24904678/Realtime_alertness_monitor_project_report.1.pdf">Project pdf</a> • 
+<a href="https://www.youtube.com/watch?v=ye48xJwuano">Video demonstration</a>
