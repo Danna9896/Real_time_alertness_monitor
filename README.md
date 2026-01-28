@@ -1,5 +1,11 @@
-00460217 – Real-Time Alertness Monitor
-<div align="center"><img width="1572" height="883" alt="image" src="https://github.com/user-attachments/assets/a4809a26-f2cf-41d5-bf6c-b8db32bd2bd2" /></div>
+<h1 align="center">00460217 – Real-Time Alertness Monitor</h1>
+
+<div align="center">
+  <img 
+       src="https://github.com/user-attachments/assets/a4809a26-f2cf-41d5-bf6c-b8db32bd2bd2"
+       width="800"
+  />
+</div>
 
 📌 Project Overview
 
