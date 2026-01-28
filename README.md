@@ -21,19 +21,22 @@
 # Models Implemented
 
 1. **ResNet18 (Baseline)**  
-   Standard ImageNet-pretrained ResNet18 used for frame-level engagement classification.
+   Single-frame CNN classifier.
 
-2. **ResNet18 + Squeeze-and-Excitation (SE)**  
-   Adds a channel-attention mechanism that reweights feature channels, improving focus on relevant facial cues (eyes, gaze, expression).
+2. **ResNet18 + GRU**  
+   Temporal model using 10-frame sequences.
 
-3. **ResNet18 + GRU (Temporal)**  
-   Combines ResNet embeddings with a bidirectional GRU operating on 10-frame sequences, capturing temporal patterns such as blinking, gaze shifts, and micro-expressions.
+3. **ResNet18 + SE**  
+   ResNet18 with Squeeze-and-Excitation channel attention.
 
 4. **Vision Transformer (ViT)**  
-   Patch-based self-attention architecture that models long-range relationships between facial regions.
+   Patch-based self-attention model.
 
 5. **Flip-Invariant ResNet18**  
-   Processes both the original and horizontally flipped image and averages logits, making predictions consistent under mirror transformations.
+   Averages predictions of original + flipped images.
+
+6. **ResNet18 (No Augmentations)**  
+   Baseline model trained without data augmentation.
 
 # Parameters
 
