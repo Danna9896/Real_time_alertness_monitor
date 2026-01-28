@@ -44,7 +44,7 @@ Preprocess DAiSEE dataset (auto-downloads from Kaggle):
 ```bash
 python preprocessing/preprocessing_daisee.py
 ```
-Preprocess Student concentration dataset:
+Preprocess Student concentration dataset (using student dataset folder):
 ```bash
 python preprocessing/preprocessing_sc.py
 ```
