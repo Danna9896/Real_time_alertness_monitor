@@ -103,8 +103,8 @@ python preprocessing/preprocessing_sequential.py
 - Prediction interval: **5 predictions/second (200ms)**
 - Smoothing window: **Last 10 predictions**
 - Engagement bar update: **Real-time**
-- Alert threshold: **< 40% engagement for 3+ seconds**
-- Confetti threshold: **> 80% engagement**
+- Alert threshold: 0% engagement bar
+- Confetti threshold: 100% engagement bar
 - Visual feedback: **Green (>70%), Yellow (40-70%), Red (<40%)**  
 
 ---
