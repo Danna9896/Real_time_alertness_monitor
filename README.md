@@ -55,10 +55,15 @@
   
 # Reference
 
-[1] Nezami, O. M., et al. *Deep Learning for Student Engagement Recognition.* ICCVW 2019.  
-[2] Hu, J., Shen, L., Sun, G. *Squeeze-and-Excitation Networks.* CVPR 2018.  
-[3] Dosovitskiy, A., et al. *An Image is Worth 16x16 Words: Transformers for Image Recognition.* 2021.  
-[4] Chung, J., Gulcehre, C., Cho, K., Bengio, Y. *Gated Recurrent Units for Sequence Modeling.* 2014.  
+# References
+
+[1] Nezami, O. M., et al. *Deep Learning for Student Engagement Recognition: A Comparative Study.* ICCVW, 2019.  
+[2] Gupta, A., Chakraborty, A., et al. *DAiSEE: Dataset for Affective States in E-learning Environments.* 2016.  
+[3] Student Concentration Image Dataset. Kaggle. *Student Engagement Image Collection.*  
+[4] Młodawski, M. *MobileNetV2 Open/Closed Eye Classifier.* 2023.  
+[5] Dosovitskiy, A., et al. *An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale.* 2021.  
+[6] Hu, J., Shen, L., Sun, G. *Squeeze-and-Excitation Networks.* CVPR, 2018.  
+[7] Chung, J., Gulcehre, C., Cho, K., Bengio, Y. *Empirical Evaluation of Gated Recurrent Units on Sequence Modeling.* 2014.  
 
 ---
 
