@@ -18,73 +18,47 @@
 <a href="https://github.com/user-attachments/files/24904678/Realtime_alertness_monitor_project_report.1.pdf">Project pdf</a><br>
 <a href="https://www.youtube.com/watch?v=ye48xJwuano">Project Presentation</a>
 
----
+# Parameters
 
-## Based on methods from:
+## Preprocessing
+- **FRAME_INTERVAL**: sampling rate for DAiSEE frames  
+- **TARGET_SIZE**: final face crop size (224×224)  
+- **OPEN_EYE_THRESHOLD**: confidence threshold for filtering  
 
-- *Nezami et al. (2019)* — Student Engagement Recognition  
-- *Squeeze-and-Excitation Networks (Hu et al., 2018)* — Channel attention  
-- *Vision Transformer (Dosovitskiy et al., 2021)* — Patch-based attention  
-- *GRU sequence modeling (Chung et al., 2014)* — Temporal reasoning  
+## Training
+- **learning_rate**: optimizer learning rate  
+- **weight_decay**: L2 regularization  
+- **batch_size**: batch size for training  
+- **seq_len**: number of frames used by GRU sequence model  
+- **hidden_size**: GRU hidden units  
 
-These inspired the model architectures and analysis used in this project.
-
-Project PDF:  
-**Realtime Alertness Monitor – Report**  
-(Place your PDF link here)
-
----
-
-In this repository, we explain and implement our real-time alertness system.  
-This is an overview of what we aim to achieve:
-
-<p align="center">
-  <img src="assets/blue_overview_1.png" width="23%">
-  <img src="assets/blue_overview_2.png" width="23%">
-  <img src="assets/blue_overview_3.png" width="23%">
-  <img src="assets/blue_overview_4.png" width="23%">
-</p>
+## Real-time app
+- **PREDICTION_INTERVAL**: model prediction frequency  
+- **VOTE_WINDOW**: number of predictions used for smoothing  
+- **ALERT_THRESHOLDS**: values controlling confetti or alerts  
 
 ---
 
-We divide the workflow into 3 main steps:
+# Folders
 
-1. **Face detection & preprocessing**  
-   Cropping faces from webcam frames with YOLOv8-face, cleaning closed-eye images, balancing dataset.
-
-2. **Engagement prediction**  
-   Multiple deep-learning models (ResNet18 baseline, SE block, ViT, GRU temporal model).
-
-3. **Real-time UI**  
-   Smooth predictions, engagement bar, glow animation, supportive messages, sound alerts.
-
-Combining these yields the final real-time system.  
-The workflow can be depicted as follows:
-
-<p align="center">
-  <img src="assets/blue_pipeline.png" width="90%">
-</p>
+- **models/** – trained weights (.pth)  
+- **preprocessing/** – scripts for dataset creation and filtering  
+- **sequences/** – scripts for GRU sequence generation  
+- **assets/** – images used in README/UI  
+- **app.py** – main real-time webcam application  
+- **train_resnet.py** – ResNet training script  
+- **train_gru.py** – GRU sequence model training  
 
 ---
 
-### Another example:
+# Reference
 
-<p align="center">
-  <img src="assets/blue_example_1.png" width="45%">
-  <img src="assets/blue_example_2.png" width="45%">
-</p>
+[1] Nezami, O. M., et al. *Deep Learning for Student Engagement Recognition.* ICCVW 2019.  
+[2] Hu, J., Shen, L., Sun, G. *Squeeze-and-Excitation Networks.* CVPR 2018.  
+[3] Dosovitskiy, A., et al. *An Image is Worth 16x16 Words: Transformers for Image Recognition.* 2021.  
+[4] Chung, J., Gulcehre, C., Cho, K., Bengio, Y. *Gated Recurrent Units for Sequence Modeling.* 2014.  
 
 ---
 
-# Usage
-
-```python
-from models.resnet import load_resnet18
-from realtime.app import run_app
-
-# Load trained model
-model = load_resnet18("models/Resnet18_cleaned.pth")
-
-# Run webcam application
-run_app(model)
-
+# Project Video Demonstration
+https://www.youtube.com/watch?v=ye48xJwuano
