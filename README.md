@@ -85,7 +85,7 @@ git clone https://github.com/yourusername/Real-time-alertness-monitor.git
 cd Real-time-alertness-monitor
 pip install -r requirements.txt
 
-
+---
 
 ## References
 
@@ -94,4 +94,7 @@ Methods & previous research that guided our system:
 - **Nezami et al. (2019)** – Engagement recognition from facial expressions  
 - **Squeeze-and-Excitation Networks (Hu et al., 2018)**  
 - **Vision Transformer (Dosovitskiy et al., 2021)**  
-- **Temporal sequence modeling with GRUs (Chung et al., 2014)**  
+- **Temporal sequence modeling with GRUs (Chung et al., 2014)**
+
+---
+
