@@ -144,7 +144,7 @@ python models/resnet18_se.py
 python models/resnet18_gru.py
 python models/ViT.py
 python models/flip_invariant_resnet18.py
-
+```
 ### 5. Run the real-time webcam application
 ```bash
 python app.py
