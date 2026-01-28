@@ -38,6 +38,17 @@
 6. **ResNet18 (No Augmentations)**  
    Baseline model trained without data augmentation.
 
+### Data Preprocessing
+
+Preprocess DAiSEE dataset (auto-downloads from Kaggle):
+```bash
+python preprocessing/preprocessing_daisee.py
+```
+
+Create sequential dataset for GRU:
+```bash
+python preprocessing/preprocessing_sequential.py
+```
 # Parameters
 
 ## Preprocessing
