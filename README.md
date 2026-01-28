@@ -19,82 +19,83 @@
 <a href="https://www.youtube.com/watch?v=ye48xJwuano">Project Presentation</a>
 
 
-## What the System Does
+# Real-time Alertness Monitor
+
+Python implementation of a real-time webcam system that detects **student engagement** using deep learning  
+(ResNet18, SE-ResNet18, ViT, and ResNet18+GRU), combined with a clean **blue-themed UI**.
 
 <p align="center">
-  <img src="assets/blue_pipeline.png" width="85%">
+  <img src="assets/preview_app_1.png" width="45%">
+  <img src="assets/preview_app_2.png" width="45%">
 </p>
 
-A webcam stream is processed in real time:
+---
 
-1. **YOLOv8-face** detects and crops the face  
-2. A deep-learning model classifies **Engaged vs Not Engaged**  
-3. A smoothing layer stabilizes noisy frame-level predictions  
-4. A **blue-themed engagement bar** displays:
-   - Supportive messages  
-   - Glow animations  
-   - Confetti at 100%  
-   - Alert sound at 0%
+## Based on methods from:
+
+- *Nezami et al. (2019)* — Student Engagement Recognition  
+- *Squeeze-and-Excitation Networks (Hu et al., 2018)* — Channel attention  
+- *Vision Transformer (Dosovitskiy et al., 2021)* — Patch-based attention  
+- *GRU sequence modeling (Chung et al., 2014)* — Temporal reasoning  
+
+These inspired the model architectures and analysis used in this project.
+
+Project PDF:  
+**Realtime Alertness Monitor – Report**  
+(Place your PDF link here)
 
 ---
 
-## Key Features (Blue Theme)
-
-### 🎯 Real-time engagement detection
-- 5 inferences per second  
-- Majority-vote smoothing  
-- Stable even during blinks and micro-expressions  
-
-### 🔵 Clean blue visual design
-- Soft gradients  
-- Rounded overlays  
-- Readable minimal UI  
-
-### 📊 Multiple deep-learning backbones tested
-- ResNet18 (baseline)  
-- ResNet18 + SE  
-- Vision Transformer (ViT)  
-- **ResNet18 + GRU (best performance)**  
-
-### 🧪 Dataset preprocessing & cleaning
-- YOLO-based face cropping  
-- Open/closed-eye filtering  
-- Balanced binary labels  
-- 10-frame temporal sequence generation  
-
----
-
-## Example Results
+In this repository, we explain and implement our real-time alertness system.  
+This is an overview of what we aim to achieve:
 
 <p align="center">
-  <img src="assets/blue_heatmaps.png" width="90%">
+  <img src="assets/blue_overview_1.png" width="23%">
+  <img src="assets/blue_overview_2.png" width="23%">
+  <img src="assets/blue_overview_3.png" width="23%">
+  <img src="assets/blue_overview_4.png" width="23%">
 </p>
 
-- **ViT** → noisy and diffuse attention  
-- **ResNet18** → stable spatial focus  
-- **SE-ResNet18** → tighter eye/mouth emphasis  
-- **GRU model** → best temporal consistency  
+---
+
+We divide the workflow into 3 main steps:
+
+1. **Face detection & preprocessing**  
+   Cropping faces from webcam frames with YOLOv8-face, cleaning closed-eye images, balancing dataset.
+
+2. **Engagement prediction**  
+   Multiple deep-learning models (ResNet18 baseline, SE block, ViT, GRU temporal model).
+
+3. **Real-time UI**  
+   Smooth predictions, engagement bar, glow animation, supportive messages, sound alerts.
+
+Combining these yields the final real-time system.  
+The workflow can be depicted as follows:
+
+<p align="center">
+  <img src="assets/blue_pipeline.png" width="90%">
+</p>
 
 ---
 
-## Quick Start
+### Another example:
 
-### Install
-```bash
-git clone https://github.com/yourusername/Real-time-alertness-monitor.git
-cd Real-time-alertness-monitor
-pip install -r requirements.txt
-
----
-
-## References
-
-Methods & previous research that guided our system:
-
-- **Nezami et al. (2019)** – Engagement recognition from facial expressions  
-- **Squeeze-and-Excitation Networks (Hu et al., 2018)**  
-- **Vision Transformer (Dosovitskiy et al., 2021)**  
-- **Temporal sequence modeling with GRUs (Chung et al., 2014)**
+<p align="center">
+  <img src="assets/blue_example_1.png" width="45%">
+  <img src="assets/blue_example_2.png" width="45%">
+</p>
 
 ---
+
+# Usage
+
+```python
+from models.resnet import load_resnet18
+from realtime.app import run_app
+
+# Load trained model
+model = load_resnet18("models/Resnet18_cleaned.pth")
+
+# Run webcam application
+run_app(model)
 
