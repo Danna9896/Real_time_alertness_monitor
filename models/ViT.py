@@ -9,7 +9,6 @@ from torchvision.models import vit_b_16, ViT_B_16_Weights
 from torch.utils.data import DataLoader
 import matplotlib.pyplot as plt
 import numpy as np
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 import os
 
 # ============================================================
@@ -199,7 +198,6 @@ def evaluate_test(weight_path="weights/ViT.pth"):
     1. Load trained model weights
     2. Run inference on test set
     3. Calculate accuracy
-    4. Display confusion matrix
     """
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -243,17 +241,6 @@ def evaluate_test(weight_path="weights/ViT.pth"):
     accuracy = 100 * (all_preds == all_labels).mean()
     print(f"Test Accuracy: {accuracy:.2f}%")
 
-    # Generate and display confusion matrix
-    cm = confusion_matrix(all_labels, all_preds)
-    disp = ConfusionMatrixDisplay(
-        confusion_matrix=cm,
-        display_labels=["Not Engaged", "Engaged"]
-    )
-
-    disp.plot(cmap="Blues")
-    plt.title("Confusion Matrix - Test Set")
-    plt.show()
-
 # ============================================================
 # MAIN EXECUTION
 # ============================================================
@@ -264,4 +251,3 @@ if __name__ == "__main__":
 
     # Evaluate on test set
     evaluate_test("weights/ViT.pth")
-
