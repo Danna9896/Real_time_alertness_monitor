@@ -40,23 +40,6 @@
 
 # Parameters
 
-## Preprocessing
-- **FRAME_INTERVAL**: sampling rate for DAiSEE frames  
-- **TARGET_SIZE**: final face crop size (224×224)  
-- **OPEN_EYE_THRESHOLD**: confidence threshold for filtering  
-
-## Training
-- **learning_rate**: optimizer learning rate  
-- **weight_decay**: L2 regularization  
-- **batch_size**: batch size for training  
-- **seq_len**: number of frames used by GRU sequence model  
-- **hidden_size**: GRU hidden units  
-
-## Real-time app
-- **PREDICTION_INTERVAL**: model prediction frequency  
-- **VOTE_WINDOW**: number of predictions used for smoothing  
-- **ALERT_THRESHOLDS**: values controlling confetti or alerts  
-
 ---
 
 # Folders
