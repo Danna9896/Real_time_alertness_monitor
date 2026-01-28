@@ -49,7 +49,6 @@
 - **daisee_sequential/** – sequential dataset for GRU  
 - **sounds/** – alert audio files  
 - **app.py** – real-time webcam application  
-- **config.py** – centralized configuration  
 - **requirements.txt** – Python dependencies  
 
 ---
