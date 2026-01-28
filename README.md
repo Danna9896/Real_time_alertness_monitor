@@ -74,29 +74,38 @@ python preprocessing/preprocessing_sequential.py
 # Parameters
 
 ## Preprocessing
-- Frame extraction rate  
-- Target image size (224×224)  
-- Closed-eye filtering threshold  
-- Sequence length for temporal models (10 frames)
+- Frame extraction rate: **1 frame per second**
+- Target image size: **224×224 pixels**
+- Closed-eye filtering threshold: **0.5 confidence**
+- Sequence length for temporal models: **10 frames**
 
-## Training
-- Optimizer settings (AdamW)  
-- Learning rate schedule  
-- Batch size (images or sequences)  
-- Early stopping patience  
-- Number of epochs  
+## Training Parameters by Model
+
+| Parameter | ResNet18 | ResNet18+SE | ResNet18+GRU | ViT | Flip-Invariant | ResNet18 (No Aug) |
+|-----------|----------|-------------|--------------|-----|----------------|-------------------|
+| **Optimizer** | AdamW | AdamW | AdamW | AdamW | AdamW | AdamW |
+| **Learning Rate** | 1e-4 | 1e-4 | 1e-4 | 5e-5 | 1e-4 | 1e-4 |
+| **Batch Size** | 32 | 32 | 16 | 16 | 32 | 32 |
+| **Weight Decay** | 0.01 | 0.01 | 0.01 | 0.05 | 0.01 | 0.01 |
+| **Epochs** | 30 | 30 | 30 | 20 | 30 | 30 |
+| **Input Size** | 224×224 | 224×224 | 224×224 | 224×224 | 224×224 | 224×224 |
+| **Scheduler** | ReduceLROnPlateau | ReduceLROnPlateau | StepLR | CosineAnnealing | ReduceLROnPlateau | ReduceLROnPlateau |
+| **Early Stopping** | 5 epochs | 5 epochs | 5 epochs | - | 5 epochs | 5 epochs |
+| **Special Features** | Standard CNN | SE blocks (r=16) | GRU (h=256, l=1) | Pretrained ViT-B/16 | Horizontal flip avg | No augmentations |
 
 ## Temporal Model (ResNet18+GRU)
-- Sequence length (10 frames)  
-- GRU hidden size  
-- Frame-level embeddings from ResNet18  
+- Sequence length: **10 frames**
+- GRU hidden size: **256**
+- GRU layers: **1**
+- Frame-level embeddings: **512-dim from ResNet18**
 
 ## Real-Time Application
-- Prediction interval (5 predictions/second)  
-- Smoothing window (recent predictions)  
-- Engagement bar update interval  
-- Confetti / alert thresholds  
-- Visual feedback color ranges  
+- Prediction interval: **5 predictions/second (200ms)**
+- Smoothing window: **Last 10 predictions**
+- Engagement bar update: **Real-time**
+- Alert threshold: **< 40% engagement for 3+ seconds**
+- Confetti threshold: **> 80% engagement**
+- Visual feedback: **Green (>70%), Yellow (40-70%), Red (<40%)**  
 
 ---
 
