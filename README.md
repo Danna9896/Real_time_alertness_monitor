@@ -123,7 +123,7 @@ python preprocessing/preprocessing_sequential.py
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/Danna9896/Real-time_alertness_monitor.git
+git clone [https://github.com/Danna9896/Real-time_alertness_monitor](https://github.com/Danna9896/Real_time_alertness_monitor)
 cd Real-time_alertness_monitor
 ```
 
@@ -218,6 +218,7 @@ python app.py
 [7] Chung, J., Gulcehre, C., Cho, K., Bengio, Y. *Empirical Evaluation of Gated Recurrent Units on Sequence Modeling.* 2014.  
 
 ---
+
 
 
 
