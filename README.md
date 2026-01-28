@@ -6,6 +6,7 @@ This project detects student engagement in real time using a webcam feed.
 It includes:
 
 Face detection (YOLOv8-Face)
+<img width="1376" height="371" alt="architechture" src="https://github.com/user-attachments/assets/16f05137-5a15-40d9-b220-7986d9484c81" />
 
 Frame-level engagement classification (ResNet-18, SE-ResNet, ViT)
 
