@@ -71,6 +71,12 @@ No hard-coded directories.
 
 Run:
 
+## 🎥 
+
+<p align="center">
+  <img src="images/demo.gif" width="600">
+</p>
+
 python realtime_app/main.py
 
 
@@ -93,6 +99,8 @@ ViT-B-16	Patch-based transformer classifier
 GRU	Temporal smoothing over 10-frame sequences
 👥 Authors
 
+
 Danna Weinzinger & Saadi Saadi
 Technion – Faculty of Electrical and Computer Engineering
 Course: 046211 – Deep Learning
+
