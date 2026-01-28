@@ -42,7 +42,7 @@
 # Folders
 
 - **preprocessing/** – dataset construction & filtering  
-- **models/** – model architectures (ResNet, SE, GRU, ViT, flip-invariant)  
+- **models/** – model architectures (ResNet, ResNet with augmentations, SE, GRU, ViT, flip-invariant)  
 - **utils/** – heatmaps, confusion matrices, robustness tests  
 - **weights/** – trained `.pth` files  
 - **daisee_dataset/** – frame-based dataset  
