@@ -40,18 +40,18 @@
 ---
 
 # Folders
-
-- **preprocessing/** – dataset construction & filtering  
-- **models/** – model architectures (ResNet, SE, GRU, ViT, flip-invariant)  
-- **utils/** – heatmaps, confusion matrices, robustness tests  
-- **weights/** – trained `.pth` files  
-- **daisee_dataset/** – frame-based dataset  
-- **daisee_sequential/** – sequential dataset for GRU  
+- **preprocessing/** – dataset construction & filtering
+- **models/** – model architectures (ResNet, SE, GRU, ViT, flip-invariant)
+- **utils/** – heatmaps, confusion matrices, robustness tests
+- **weights/** – trained `.pth` files
+- **daisee_dataset/** – frame-based dataset
+- **daisee_sequential/** – sequential dataset for GRU
 - **sounds/** – alert audio files
-  
-- **app.py** – real-time webcam application  
-- **config.py** – centralized configuration  
+- **app.py** – real-time webcam application
+- **config.py** – centralized configuration
 - **requirements.txt** – Python dependencies
+- **yolov8n-face.pt** – YOLOv8 face detector
+
   
 # Reference
 
