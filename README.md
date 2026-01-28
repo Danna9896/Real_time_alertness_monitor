@@ -7,8 +7,8 @@
   />
 </div>
 <p align="center">
-  <a href="https://github.com/yourusername">Danna Weinzinger</a> • 
-  <a href="https://github.com/yourpartner">Saadi Saadi</a>
+  <a href="https://github.com/Danna9896">Danna Weinzinger</a> • 
+  <a href="https://github.com/saadisaadi1">Saadi Saadi</a>
 </p>
 
 <p align="center">
