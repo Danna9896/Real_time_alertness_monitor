@@ -52,8 +52,6 @@ Run:
 
 ## 🎥 
 
-![gif_demonstration](https://github.com/user-attachments/assets/7a007650-143c-4720-82da-c30c27c021b5)
-
 python realtime_app/main.py
 
 
