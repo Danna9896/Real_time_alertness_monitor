@@ -52,9 +52,6 @@
 - **requirements.txt** – Python dependencies
 - **yolov8n-face.pt** – YOLOv8 face detector
 
-  
-# Reference
-
 # References
 
 [1] Nezami, O. M., et al. *Deep Learning for Student Engagement Recognition: A Comparative Study.* ICCVW, 2019.  
