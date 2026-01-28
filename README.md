@@ -18,19 +18,20 @@
 <a href="https://github.com/user-attachments/files/24904678/Realtime_alertness_monitor_project_report.1.pdf">Project pdf</a><br>
 <a href="https://www.youtube.com/watch?v=ye48xJwuano">Project presentation video</a>
 
+## Example Screens from Our Real-Time Interface:
 <table align="center">
   <tr>
     <td align="center">
-      <img src="https://private-user-images.githubusercontent.com/208338736/541573045-8e1c8eef-ef3c-4973-b08d-f7eae6bd380e.png" width="260px" />
-      <br><b>Caption 1</b>
+      <img src="https://github.com/user-attachments/assets/e3a46d36-45b8-4a97-9ce3-aa7e5c7cbb9b" width="250px" />
+      <br><b>App welcome screen</b>
     </td>
     <td align="center">
-      <img src="https://private-user-images.githubusercontent.com/208338736/541573330-d304f77a-1b09-4f02-ae0a-cb4a6144054d.jpg" width="260px" />
-      <br><b>Caption 2</b>
+      <img src="https://github.com/user-attachments/assets/8e1c8eef-ef3c-4973-b08d-f7eae6bd380e" width="250px" />
+      <br><b>Unfocused example</b>
     </td>
     <td align="center">
-      <img src="https://private-user-images.githubusercontent.com/208338736/541573394-e3a46d36-45b8-4a97-9ce3-aa7e5c7cbb9b.png" width="260px" />
-      <br><b>Caption 3</b>
+      <img src="https://github.com/user-attachments/assets/d304f77a-1b09-4f02-ae0a-cb4a6144054d" width="250px" />
+      <br><b>Focused example</b>
     </td>
   </tr>
 </table>
