@@ -1,4 +1,4 @@
 vit*.pth filter=lfs diff=lfs merge=lfs -text
-*.pth !text !filter !merge !diff
 weights/ViT.pth filter=lfs diff=lfs merge=lfs -text
+*.pth !text !filter !merge !diff
 weights/*.pth filter=lfs diff=lfs merge=lfs -text
