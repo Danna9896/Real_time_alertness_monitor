@@ -16,12 +16,11 @@ import os
 # ============================================================
 
 # Training parameters
-LR = 5e-5                    # Lower learning rate for ViT (fine-tuning)
+LR = 5e-5                    # Lower learning rate for ViT 
 BATCH_SIZE = 16
 SIZE = 224                   # Input image size (224x224)
 WEIGHT_DECAY = 0.05          # Higher weight decay for ViT
-NUM_EPOCHS = 20              # Fewer epochs needed (pretrained backbone)
-
+NUM_EPOCHS = 20            
 # Paths
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATASET_DIR = os.path.join(ROOT_DIR, "daisee_dataset")
