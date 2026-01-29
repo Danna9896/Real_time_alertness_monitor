@@ -57,20 +57,7 @@
 6. **ResNet18 (No Augmentations)**  
    Baseline model trained without data augmentation.
 
-# Data Preprocessing
 
-Preprocess DAiSEE dataset (auto-downloads from Kaggle):
-```bash
-python preprocessing/preprocessing_daisee.py
-```
-Preprocess Student concentration dataset (using student dataset folder):
-```bash
-python preprocessing/preprocessing_sc.py
-```
-Create sequential dataset for GRU:
-```bash
-python preprocessing/preprocessing_sequential.py
-```
 # Parameters
 
 ## Preprocessing
@@ -139,7 +126,7 @@ pip install -r requirements.txt
 ```bash
 python preprocessing/preprocessing_daisee.py
 ```
-####    Student concentration dataset frames
+####    Student concentration dataset frames (using student dataset folder):
 ```bash
 python preprocessing/preprocessing_sc.py
 ```
@@ -225,6 +212,7 @@ python app.py
 [7] Chung, J., Gulcehre, C., Cho, K., Bengio, Y. *Empirical Evaluation of Gated Recurrent Units on Sequence Modeling.* 2014.  
 
 ---
+
 
 
 
