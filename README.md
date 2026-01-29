@@ -91,12 +91,6 @@
 
 </details>
 
-## Temporal Model (ResNet18+GRU)
-- Sequence length: **10 frames**
-- GRU hidden size: **256**
-- GRU layers: **1**
-- Frame-level embeddings: **512-dim from ResNet18**
-
 ## Real-Time Application
 - Prediction interval: **5 predictions/second (200ms)**
 - Engagement bar update: **Real-time**
@@ -224,6 +218,7 @@ python app.py
 [7] Chung, J., Gulcehre, C., Cho, K., Bengio, Y. *Empirical Evaluation of Gated Recurrent Units on Sequence Modeling.* 2014.  
 
 ---
+
 
 
 
