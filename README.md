@@ -134,16 +134,22 @@ pip install -r requirements.txt
 ```bash
 python preprocessing/preprocessing_daisee.py
 ```
+####    Student concentration dataset frames
+```bash
+python preprocessing/preprocessing_sc.py
+```
 ####    Sequential 10-frame dataset (GRU)
 ```bash
 python preprocessing/preprocessing_sequential.py
 ```
 
+
+ <details> <summary> <h3> Optional: Training & Evaluation (Click to expand) </h3> </summary>
+
 ### 4. (Optional) Train your own models  
 You can train any of the architectures directly from the `models/` folder.  
 Each script loads the dataset, trains the model, and saves the `.pth` file into `weights/`.
 
-Examples:
 ```bash
 python models/resnet18.py
 python models/resnet18_se.py
@@ -152,7 +158,6 @@ python models/ViT.py
 python models/flip_invariant_resnet18.py
 ```
 
- <details> <summary>🔧 Optional: Training & Evaluation (Click to expand)</summary>
 ### 5. (Optional) Evaluate models with utility scripts
 #### Generate Confusion Matrix
 Evaluate any trained model and display its confusion matrix on the test set:
@@ -218,6 +223,7 @@ python app.py
 [7] Chung, J., Gulcehre, C., Cho, K., Bengio, Y. *Empirical Evaluation of Gated Recurrent Units on Sequence Modeling.* 2014.  
 
 ---
+
 
 
 
