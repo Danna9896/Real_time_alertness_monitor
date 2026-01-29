@@ -79,6 +79,18 @@
 | **Scheduler** | StepLR (step=8, γ=0.5) | StepLR (step=8, γ=0.5) | StepLR (step=8, γ=0.5) | CosineAnnealing | StepLR (step=8, γ=0.5) | StepLR (step=8, γ=0.5) |
 | **Early Stopping** | 8 epochs | 8 epochs | 8 epochs | No | 8 epochs | 8 epochs |
 
+<details>
+<summary><b>GRU Model Architecture Details</b></summary>
+
+| Parameter | Value |
+|-----------|-------|
+| Sequence length | 10 frames |
+| GRU hidden size | 256 |
+| GRU layers | 1 |
+| Frame embeddings | 512-dim from ResNet18 |
+
+</details>
+
 ## Temporal Model (ResNet18+GRU)
 - Sequence length: **10 frames**
 - GRU hidden size: **256**
@@ -212,6 +224,7 @@ python app.py
 [7] Chung, J., Gulcehre, C., Cho, K., Bengio, Y. *Empirical Evaluation of Gated Recurrent Units on Sequence Modeling.* 2014.  
 
 ---
+
 
 
 
