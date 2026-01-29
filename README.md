@@ -119,7 +119,7 @@ python preprocessing/preprocessing_sequential.py
 - **yolov8n-face.pt** – YOLOv8 face detector
 
 # Usage
-
+<details>
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/Danna9896/Real-time_alertness_monitor
@@ -205,7 +205,7 @@ This test helps verify if models are robust to horizontal flips. The Flip-Invari
 ```bash
 python app.py
 ```
-
+</details>
 # References
 
 [1] Nezami, O. M., et al. *Deep Learning for Student Engagement Recognition: A Comparative Study.* ICCVW, 2019.  
@@ -217,6 +217,7 @@ python app.py
 [7] Chung, J., Gulcehre, C., Cho, K., Bengio, Y. *Empirical Evaluation of Gated Recurrent Units on Sequence Modeling.* 2014.  
 
 ---
+
 
 
 
