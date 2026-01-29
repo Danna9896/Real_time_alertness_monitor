@@ -100,11 +100,10 @@ python preprocessing/preprocessing_sequential.py
 
 ## Real-Time Application
 - Prediction interval: **5 predictions/second (200ms)**
-- Smoothing window: **Last 10 predictions**
 - Engagement bar update: **Real-time**
-- Alert threshold: 0% engagement bar
-- Confetti threshold: 100% engagement bar
-- Visual feedback: **Green (>70%), Yellow (40-70%), Red (<40%)**  
+- Alert threshold: **0% engagement bar**
+- Confetti threshold: **100% engagement bar**
+- Visual feedback: **Green (>90%), Cyan (75-90%), Blue (55-75%), Yellow (35-55%), Orange (15-35%), Red (<15%)**  
 
 ---
 
@@ -218,6 +217,7 @@ python app.py
 [7] Chung, J., Gulcehre, C., Cho, K., Bengio, Y. *Empirical Evaluation of Gated Recurrent Units on Sequence Modeling.* 2014.  
 
 ---
+
 
 
 
