@@ -129,6 +129,11 @@ cd Real-time_alertness_monitor
 ```bash
 pip install -r requirements.txt
 ```
+
+
+ <details> <summary> <h3> Optional: Training & Evaluation (Click to expand) </h3> </summary>
+
+
 ### 3. (Optional) Preprocess datasets — only if you want to train models
 ####    DAiSEE frames (ResNet / SE / ViT / Flip-Invariant)
 ```bash
@@ -142,9 +147,6 @@ python preprocessing/preprocessing_sc.py
 ```bash
 python preprocessing/preprocessing_sequential.py
 ```
-
-
- <details> <summary> <h3> Optional: Training & Evaluation (Click to expand) </h3> </summary>
 
 ### 4. (Optional) Train your own models  
 You can train any of the architectures directly from the `models/` folder.  
@@ -223,6 +225,7 @@ python app.py
 [7] Chung, J., Gulcehre, C., Cho, K., Bengio, Y. *Empirical Evaluation of Gated Recurrent Units on Sequence Modeling.* 2014.  
 
 ---
+
 
 
 
