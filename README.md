@@ -119,7 +119,6 @@ python preprocessing/preprocessing_sequential.py
 - **yolov8n-face.pt** – YOLOv8 face detector
 
 # Usage
-<details>
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/Danna9896/Real-time_alertness_monitor
@@ -152,8 +151,9 @@ python models/resnet18_gru.py
 python models/ViT.py
 python models/flip_invariant_resnet18.py
 ```
-### 5. (Optional) Evaluate models with utility scripts
 
+ <details> <summary>🔧 Optional: Training & Evaluation (Click to expand)</summary>
+### 5. (Optional) Evaluate models with utility scripts
 #### Generate Confusion Matrix
 Evaluate any trained model and display its confusion matrix on the test set:
 
@@ -201,11 +201,12 @@ SELECTED_MODEL = 1  # Tests Flip-Invariant ResNet18
 
 This test helps verify if models are robust to horizontal flips. The Flip-Invariant model (index 1) should show the highest consistency.
 ##### other files in utils are model specific , so you can run without changing them.
+</details>
+
 ### 6. Run the real-time webcam application
 ```bash
 python app.py
 ```
-</details>
 # References
 
 [1] Nezami, O. M., et al. *Deep Learning for Student Engagement Recognition: A Comparative Study.* ICCVW, 2019.  
@@ -217,6 +218,7 @@ python app.py
 [7] Chung, J., Gulcehre, C., Cho, K., Bengio, Y. *Empirical Evaluation of Gated Recurrent Units on Sequence Modeling.* 2014.  
 
 ---
+
 
 
 
